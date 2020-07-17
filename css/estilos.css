@@ -1,34 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
 
-.top-banner{
-  min-height: 150px;
-}
-
-.contenedor{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.titulo{
-  color: #e8eaf6;
-}
-.boton-banner{
-  min-height: 150px;
-}
-
-.borderle{
-  border-radius: 1px;
-  border-color: black;
-}
 body {
   background-color: #ededed;
-  font-family: 'RobotoDraft', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  background: #ecf0f1;
+  color: #34495e;
+  padding-top: 40px;
+  /* text-shadow: white 1px 1px 1px; */
+  text-align: center;
 }
-/* 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-} */
 
 h5 {
   margin: 0px;
@@ -37,8 +18,99 @@ h5 {
   color: #262535;
 }
 
+h1 {
+  color: rgb(110, 110, 110);
+  font-weight: 100;
+  font-size: 40px;
+  margin: 10px 0px 10px;
+}
+
 p {
-  font-size: 12px;
+  color: rgb(68, 68, 68);
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 7px;
+  margin: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: white;
+  color: #34495e;
+}
+
+input#to {
+  border: 1px solid black;
+  border-radius: 5px;
+  /* background-color: ; */
+  color: black;
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 300px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgb(68, 68, 68);
+  width: 30px;
+  height: 30px;
+  margin: -4%;
+  border-radius: 90%;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 1px solid rgb(187, 255, 0);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
+}
+
+label {
+  color: rgb(175, 175, 175);
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.top-banner {
+  min-height: 150px;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo {
+  color: #e8eaf6;
+}
+
+.boton-banner {
+  min-height: 150px;
 }
 
 .center {
@@ -139,47 +211,18 @@ p {
   cursor: pointer;
 }
 
-.notransition {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
-.hide {
-  display: none;
-}
-
-
-Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Dosis:700);
-
-body {
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
-  background: #ecf0f1;
-  color: #34495e;
-  padding-top: 40px;
-  /* text-shadow: white 1px 1px 1px; */
+Optional .property-image-title {
   text-align: center;
+  position: Relative;
+  top: 30%;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  color: black;
+  font-size: 1.2em;
+}
+
+.property-card:hover .property-image-title {
+  opacity: 1;
 }
 
 .value {
@@ -197,46 +240,6 @@ body {
   font-family: "Dosis", Helvetica, Arial, sans-serif;
 }
 
-input[type="range"] {
-  display: block;
-  -webkit-appearance: none;
-  background-color: #bdc3c7;
-  width: 300px;
-  height: 5px;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin: 0 auto;
-  outline: 0;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: rgb(68, 68, 68);
-  width: 30px;
-  height: 30px;
-  margin: -4%;
-  border-radius: 90%;
-  border: 1px solid white;
-  cursor: pointer;
-  transition: .3s ease-in-out;
-}
-
-input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: white;
-  border: 1px solid rgb(187, 255, 0);
-}
-
-input[type="range"]::-webkit-slider-thumb:active {
-  transform: scale(1.6);
-}
-
-label {
-  color: rgb(175, 175, 175);
-  font-weight: 100;
-  font-size: 40px;
-  margin: 40px 0px 20px;
-}
-
 .header {
   padding: 1px;
   text-align: center;
@@ -245,20 +248,15 @@ label {
   font-size: 25px;
 }
 
-h1 {
-  color: rgb(110, 110, 110);
-  font-weight: 100;
-  font-size: 40px;
-  margin: 10px 0px 10px;
-}
-
-p {
-  color: rgb(68, 68, 68);
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 20px;
+.app-header {
+  display: block;
+  background: #3f51b5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
 
 #clockdiv {
@@ -290,24 +288,9 @@ p {
   font-size: 20px;
   color: rgb(0, 0, 0);
   font-family: "Dosis",
-  Helvetica,
-  Arial,
-  sans-serif;
-}
-
-input {
-  border-radius: 7px;
-  margin: 5%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 80px;
-  height: 50px;
-  text-align: center;
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  background-color: white;
-  color: #34495e;
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .app-footer {
@@ -328,39 +311,31 @@ input {
   margin-bottom: 5%;
 }
 
-/* .app-header {
-    display: block;
-    background: #3f51b5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    height: $headerHeight;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-} */
 .content {
   margin-top: 10px;
-}
-
-.app-header {
-  height: max-content;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .timeoff {
   display: inline-block;
 }
 
-.timeselector {
-  padding: 1%;
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
-.clockUI {
-  /* background-color: #ffff; */
-  padding: 1%;
+.hide {
+  display: none;
+}
+
+span {
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+span#timesHMS {
+  margin: 0.3rem;
 }
