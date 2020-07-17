@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title" charset="utf-8">
-        <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
-        <script src="js/materialize.js" type="text/javascript"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script src="js/jqueryExample2.js"></script>
-        <script>
-        </script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title" charset="utf-8">
+  <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
+  <script src="js/materialize.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/jqueryExample2.js"></script>
+  <script>
+  </script>
+</head>
 
-    <body onload="timet();initializeClock('clockdiv', deadline);">
-        <div class="center">
-            <div class="property-card" id="card1" style="color: #c3c3c3">
-                <a href="#">
-                    <div class="property-image">
-                        <div class="property-image-title">
-                            <h5>KTO Playground</h5>
-                        </div>
-                    </div>
-                </a>
-                <div id='clock' data-clickable="true" class="hide" style="padding-top: 10%;">
-                    <div class=" container">
-                        <div class="content">
-                            <div class="timeoff">
-                                <input class="p" id="to" type="time" id="time" value="13:00" onchange="timet()">
-                                <br>
-                                <span>
-                                    <label for="p" id='to' class="smalltext">Time Off : </label>
-                                    <p id="hs" class="">00:00</p>
-                                </span>
-                                <br>
-                                <span>
-                                    <label for="p" id='to' class="smalltext">Current Time : </label>
-                                    <p id="hs1" class="">00:00</p>
-                                </span>
-                            </div>
-                            <h1>Countdown Clock</h1>
-                            <div id="clockdiv">
-                                <div>
-                                    <span class="hours">00</span>
-                                    <div class="smalltext">Hours</div>
-                                </div>
-                                <div>
-                                    <span class="minutes">00</span>
-                                    <div class="smalltext">Minutes</div>
-                                </div>
-                                <div>
-                                    <span class="seconds">00</span>
-                                    <div class="smalltext">Seconds</div>
-                                </div>
-                            </div>
-                            <div class="timeselector">
-                                <span>
-                                    <p id="r1">Hours</p>
-                                </span>
-                                <p id="slider1" class="value">12</p>
-                                <input type="range" class="slider" min="1" max="12" value="8" id="rh1">
-                                <span>
-                                    <p id="r1">Minutes</p>
-                                </span>
-                                <p id="slider2" class="value">45</p>
-                                <input id="rm1" class="slider" type="range" min="0" max="59" value="45">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="property-description">
-                        <h5> JS Clock </h5>
-                        <p>Clock to check punch out time, because I'm ID-10T.</p>
-                    </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                        </div>
-                    </a>
-                </div>
+<body onload="timet();initializeClock('clockdiv', deadline);">
+  <div class="center">
+    <div class="property-card" id="card1" style="color: #c3c3c3">
+      <a href="#">
+        <div class="property-image">
+          <div class="property-image-title">
+            <h5>KTO Playground</h5>
+          </div>
+        </div>
+      </a>
+      <div id='clock' data-clickable="true" class="hide" style="padding-top: 10%;">
+        <div class=" container">
+          <div class="content">
+            <div class="timeoff">
+              <input class="p" id="to" type="time" id="time" value="13:00" onchange="timet()">
+              <br>
+              <span>
+                <label for="p" id='to' class="smalltext">Time Off : </label>
+                <p id="hs" class="">00:00</p>
+              </span>
+              <br>
+              <span>
+                <label for="p" id='to' class="smalltext">Current Time : </label>
+                <p id="hs1" class="">00:00</p>
+              </span>
             </div>
-    </body>
+            <h1>Countdown Clock</h1>
+            <div id="clockdiv">
+              <div>
+                <span class="hours">00</span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes">00</span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds">00</span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+            <div class="timeselector">
+              <span>
+                <p id="r1">Hours</p>
+              </span>
+              <p id="slider1" class="value">12</p>
+              <input type="range" class="slider" min="1" max="12" value="8" id="rh1">
+              <span>
+                <p id="r1">Minutes</p>
+              </span>
+              <p id="slider2" class="value">45</p>
+              <input id="rm1" class="slider" type="range" min="0" max="59" value="45">
+            </div>
+          </div>
+        </div>
+        <div class="property-description">
+          <h5> JS Clock </h5>
+          <p>Clock to check punch out time, because I'm ID-10T.</p>
+        </div>
+        <a href="#">
+          <div class="property-social-icons">
+          </div>
+        </a>
+      </div>
+    </div>
+</body>
+
 </html>
