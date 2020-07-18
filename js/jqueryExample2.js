@@ -48,6 +48,15 @@ $(document).ready(function () {
             $('#clock').toggleClass("hide")
             $("p").css("color", "white")
             $("h1").css("color", "white")
+            console.log(($(this).css('width') <= "480px"))
+            console.log($(this).css('width'))
+            if ($(this).css('width') <= "480px") {
+                console.log('<=')
+                $(".timeselector").addClass('hide')
+            } else {
+                console.log('>')
+                $(".timeselector").removeClass('hide')
+            }
 
         } else {
 
