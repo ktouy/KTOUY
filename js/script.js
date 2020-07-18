@@ -1,3 +1,29 @@
+$(document).ready(function () {
+
+        
+        //Local Storage to set time picker
+        if (window.localStorage.getItem('timePicker') == null){
+            window.localStorage.setItem('timePicker', '13:00')
+            $('#to').attr('value', '13:00')
+            $('#to')[0].value = '13:00'
+        }else{
+            t = window.localStorage.getItem('timePicker')
+            $('#to').attr('value', t)
+            $('#to')[0].value = t
+        }
+
+
+        //on change save value
+        $('#to').on('change', function (t) {
+            var t = $('#to')[0].value;
+            // $('#to').attr('value', t)
+            window.localStorage.setItem('timePicker', t);
+            console.log(t)
+        })
+
+
+});
+
 var nt;
 var nm;
 var ss;
@@ -45,7 +71,13 @@ function timet() {
         console.log(rm.value);
     };
 
-    var t = document.getElementById("to").value;
+
+
+   //read time picker value from local storage
+    t = window.localStorage.getItem('timePicker')
+
+    // var t = document.getElementById("to").value;
+
     nt = parseInt(t.substr(0, 2));
     nm = parseInt(t.substr(3, 5));
     //    console.log("Time in - " + nt + ":" + n(nm));
@@ -136,3 +168,5 @@ function initializeClock(id, endtime) {
 }
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 // initializeClock('clockdiv', deadline);
+
+
