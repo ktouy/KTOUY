@@ -9,6 +9,8 @@ var ml;
 var ct;
 var cm;
 var cs;
+var wk;
+var dy;
 
 function n(n) {
     return n > 10 ? "" + n : "0" + n;
@@ -32,7 +34,7 @@ function timet() {
     output2.innerHTML = rm.valueAsNumber;
 
     var rh1 = rh.valueAsNumber;
-    let rh2 = rm.valueAsNumber;
+    var rh2 = rm.valueAsNumber;
 
     rh.oninput = function () {
         output1.innerHTML = this.value;
@@ -43,10 +45,10 @@ function timet() {
         console.log(rm.value);
     };
 
-    var t = $('input#to').attr('value');
+    var t = document.getElementById("to").value;
     nt = parseInt(t.substr(0, 2));
     nm = parseInt(t.substr(3, 5));
-    //console.log("Time in - " + nt + ":" + n(nm));
+    //    console.log("Time in - " + nt + ":" + n(nm));
     nt = nt + rh1; //8
     nm = nm + rh2; //45
     //console.log(d(rh1)+"rh");
@@ -70,7 +72,7 @@ function timet() {
     rs = nt + ":" + m(nm);
 
     document.getElementById("hs").innerHTML = rs;
-    //console.log("Time out - " + rs);
+    //    console.log("Time out - " + rs);
 
 }
 
@@ -83,7 +85,6 @@ function timeLeft() {
     //console.log(n(ct) + ":" + n(Math.abs(cm)) + ":" + n(ss));
     document.getElementById("hs1").innerHTML = m(dT.getHours()) + ":" + m(dT.getMinutes());
 }
-
 
 // time left
 
